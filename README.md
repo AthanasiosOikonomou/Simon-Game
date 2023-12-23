@@ -35,8 +35,6 @@ Make sure you have the following installed:
 ```bash
   git clone https://github.com/Consouldenature/Simon-Game.git
 ```
-   bash
-   
 
 2. Open the index.html file in your web browser.
 
