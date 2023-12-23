@@ -1,6 +1,4 @@
 var buttonColours = ["red", "blue", "green", "yellow"];
-let selectedSongName = '';
-const selectedSong = `sounds/${selectedSongName}.mp3`;
 var gamePattern = [];
 var userClickedPattern = [];
 
@@ -32,13 +30,12 @@ function nextSequence(){
     var randomNumber = Math.floor(Math.random()*4);
     var randomChosenColour = buttonColours[randomNumber];
     gamePattern.push(randomChosenColour);
-    // animation + sound;
     $("#"+randomChosenColour).fadeOut(100).fadeIn(100);
     playSound(randomChosenColour);
 };
 
 function playSound(name){
-    selectedSongName = name;
+    let selectedSong = `sounds/${name}.mp3`;
     var audio = new Audio(selectedSong);
     audio.play();
 };
