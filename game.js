@@ -1,5 +1,6 @@
 var buttonColours = ["red", "blue", "green", "yellow"];
-
+let selectedSongName = '';
+const selectedSong = `sounds/${selectedSongName}.mp3`;
 var gamePattern = [];
 var userClickedPattern = [];
 
@@ -37,7 +38,8 @@ function nextSequence(){
 };
 
 function playSound(name){
-    var audio = new Audio("sounds/"+name+".mp3");
+    selectedSongName = name;
+    var audio = new Audio(selectedSong);
     audio.play();
 };
 
