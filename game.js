@@ -5,6 +5,7 @@ var userClickedPattern = [];
 var started = false;
 
 var level = 0;
+var newChanges = 'Hello from the other side ';
 
 $(document).keydown(function(){
     if(!started)
